@@ -1,0 +1,31 @@
+<!-- manage_agents.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Manage Agents{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Agent Management</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for agent in agents %}
+            <tr>
+                <td>{{ agent.id }}</td>
+                <td>{{ agent.name }}</td>
+                <td>{{ agent.email }}</td>
+                <td>{{ agent.phone }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

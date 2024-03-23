@@ -1,0 +1,16 @@
+<!-- error.html -->
+{% extends 'base.html' %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>An Error Occurred</h2>
+            <p>{{ message }}</p>
+            <p>Please try again later or contact support for assistance.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

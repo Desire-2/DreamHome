@@ -1,0 +1,85 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* User information section */
+.user-info {
+    margin-bottom: 20px;
+}
+
+.user-info p {
+    margin: 5px 0;
+}
+
+/* Actions section */
+.actions {
+    margin-bottom: 20px;
+}
+
+.actions h3 {
+    margin-bottom: 10px;
+}
+
+.actions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.actions li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.actions a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.actions a.btn-primary {
+    background-color: #007bff;
+}
+
+.actions a.btn-secondary {
+    background-color: #6c757d;
+}
+
+.actions a.btn-danger {
+    background-color: #dc3545;
+}
+
+/* Properties table */
+.properties h3 {
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #f2f2f2;
+}

@@ -1,0 +1,29 @@
+<!-- view_users.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}View Users{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>User List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

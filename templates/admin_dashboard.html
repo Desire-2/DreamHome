@@ -1,0 +1,81 @@
+<!-- admin_dashboard.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2 class="text-center mb-4">Welcome to Admin Dashboard, {{ current_user.username }}</h2>
+
+    <!-- Section for managing properties -->
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Manage Properties</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="{{ url_for('add_property') }}" class="btn btn-success btn-block">Add Property</a></li>
+                        {% if properties %}
+                            {% for property in properties %}
+                                <li class="list-group-item"><a href="{{ url_for('modify_properties', property_id=property.id) }}" class="btn btn-primary btn-block">Modify Property</a></li>
+                                <li class="list-group-item"><a href="{{ url_for('delete_property', property_id=property.id) }}" class="btn btn-danger btn-block">Delete Property</a></li>
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for managing agents -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Manage Agents</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="{{ url_for('manage_agents') }}" class="btn btn-warning btn-block">Manage Agents</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section for managing users -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Manage Users</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="{{ url_for('view_users') }}" class="btn btn-info btn-block">View Users</a></li>
+                        <li class="list-group-item"><a href="{{ url_for('manage_admins') }}" class="btn btn-warning btn-block">Manage Admins</a></li>
+                        {% if users %}
+                            {% for user in users %}
+                                <li class="list-group-item"><a href="{{ url_for('delete_user', user_id=user.id) }}" class="btn btn-danger btn-block">Delete User</a></li>
+                            {% endfor %}
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional sections for other functionalities -->
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title text-center">Other Actions</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="{{ url_for('export_data') }}" class="btn btn-success btn-block">Export Data</a></li>
+                        <li class="list-group-item"><a href="{{ url_for('view_reports') }}" class="btn btn-info btn-block">View Reports</a></li>
+                        <!-- Add more links or buttons as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

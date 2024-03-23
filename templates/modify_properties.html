@@ -1,0 +1,71 @@
+<!-- modify_properties.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Modify Property{% endblock %}
+
+{% block content %}
+    <h1 class="mb-4">Modify Property</h1>
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" value="{{ property.title }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="3" required>{{ property.description }}</textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="price">Price ($)</label>
+                        <input type="number" class="form-control" id="price" name="price" value="{{ property.price }}" min="0" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="num_bedrooms">Number of Bedrooms</label>
+                        <input type="number" class="form-control" id="num_bedrooms" name="num_bedrooms" value="{{ property.num_bedrooms }}" min="0" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="num_bathrooms">Number of Bathrooms</label>
+                        <input type="number" class="form-control" id="num_bathrooms" name="num_bathrooms" value="{{ property.num_bathrooms }}" min="0" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="area">Area (sqm)</label>
+                        <input type="number" class="form-control" id="area" name="area" value="{{ property.area }}" min="0" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" class="form-control" id="location" name="location" value="{{ property.location }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="year_built">Year Built</label>
+                    <input type="number" class="form-control" id="year_built" name="year_built" value="{{ property.year_built }}" min="1800" max="{{ current_year }}" required>
+                </div>
+                <div class="form-group">
+                    <label for="image_url">Image URL</label>
+                    <input type="text" class="form-control" id="image_url" name="image_url" value="{{ property.image_url }}" required>
+                </div>
+                <!-- Add more fields for other property details as needed -->
+
+                <button type="submit" class="btn btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+<!-- JavaScript for form validation -->
+<script>
+    // Validate form on submit
+    document.getElementById('modify-property-form').addEventListener('submit', function(event) {
+        var form = this;
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    });
+</script>
+{% endblock %}

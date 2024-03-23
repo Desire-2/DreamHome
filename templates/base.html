@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigali Inspectify Ltd</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contact.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add other CSS files if needed -->
+    <style>
+        /* Add your custom styles here */
+        .navbar {
+            background-color: #3f51b5; /* Deep Purple */
+            color: #fff;
+            border-radius: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .nav-link {
+            color: #fff !important;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .nav-link:hover {
+            color: #ffc107 !important; /* Yellow */
+        }
+        .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        .navbar-nav .nav-item:last-child {
+            margin-right: 0;
+        }
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background-color: #3f51b5; /* Deep Purple */
+            z-index: 1;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .nav-item:hover .sub-menu {
+            display: block;
+        }
+        .sub-menu li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Kigali Inspectify Ltd</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('view_properties') }}">Properties</a>
+                    <ul class="sub-menu">
+                        <li><a class="nav-link" href="{{ url_for('properties_for_sale') }}">For Sell</a></li>
+                        <li><a class="nav-link" href="{{ url_for('properties_for_rent') }}">For Rent</a></li>
+                        <li><a class="nav-link" href="{{ url_for('featured_properties') }}">Featured Properties</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Services</a>
+                    <ul class="sub-menu">
+                        <li><a class="nav-link" href="#">Property Management</a></li>
+                        <li><a class="nav-link" href="#">Real Estate Consultation</a></li>
+                        <li><a class="nav-link" href="#">Legal Assistance</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Us</a>
+                    <ul class="sub-menu">
+                        <li><a class="nav-link" href="#">Company Overview</a></li>
+                        <li><a class="nav-link" href="#">Mission and Vision</a></li>
+                        <li><a class="nav-link" href="#">Team Members</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog_news">Blog / News</a>
+                    <ul class="sub-menu">
+                        <li><a class="nav-link" href="#">Real Estate Tips</a></li>
+                        <li><a class="nav-link" href="#">Market Trends</a></li>
+                        <li><a class="nav-link" href="#">Industry News</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/faq">FAQ</a>
+                </li>
+                {% if logged_in %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('admin_dashboard') }}">Admin Panel</a>
+                </li>
+            {% endif %}
+            {% if not logged_in %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('login') }}">Sign Up / Log In</a>
+                </li>
+            {% endif %}
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mt-4">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- Add your JavaScript files if needed -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

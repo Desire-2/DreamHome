@@ -1,0 +1,122 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Real Estate App - Home{% endblock %}
+
+{% block extra_styles %}
+<!-- Custom styles specific to the home page -->
+<style>
+    /* Add custom styles here */
+    .jumbotron {
+        background-image: url('background.jpg'); /* Add your background image */
+        background-size: cover;
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+        margin-bottom: 30px;
+        border-radius: 0;
+    }
+    .jumbotron h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .jumbotron p {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .property-card {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .property-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .property-card h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .property-card p {
+        color: #666;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Welcome to Kigali Inspectify Ltd</h1>
+    <p>Find your dream home with us</p>
+    <!-- Search form -->
+    <form action="{{ url_for('search_properties') }}" method="GET" class="form-inline justify-content-center mt-4">
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="location" class="sr-only">Location</label>
+            <input type="text" class="form-control" id="location" name="location" placeholder="Enter location">
+        </div>
+        <div class="form-group mx-sm-3 mb-2">
+            <label for="price_range" class="sr-only">Price Range</label>
+            <select class="form-control" id="price_range" name="price_range">
+                <option value="">Price Range</option>
+                <option value="0-500000">$0 - $500,000</option>
+                <option value="500000-1000000">$500,000 - $1,000,000</option>
+                <option value="1000000-1500000">$1,000,000 - $1,500,000</option>
+                <!-- Add more price range options as needed -->
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+    </form>
+</div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Recently Added Properties</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for property in recently_added_properties %}
+            <div class="col-md-4">
+                <div class="property-card">
+                    <img src="{{ property.image_url }}" alt="{{ property.title }}">
+                    <h3>{{ property.title }}</h3>
+                    <p><strong>Price:</strong> ${{ property.price }}</p>
+                    <p><strong>Location:</strong> {{ property.location }}</p>
+                    <!-- Add more property details as needed -->
+                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    
+    <!-- Add a section for most viewed properties -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Most Viewed Properties</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for property in most_viewed_properties %}
+            <div class="col-md-4">
+                <div class="property-card">
+                    <img src="{{ property.image_url }}" alt="{{ property.title }}">
+                    <h3>{{ property.title }}</h3>
+                    <p><strong>Price:</strong> ${{ property.price }}</p>
+                    <p><strong>Location:</strong> {{ property.location }}</p>
+                    <!-- Add more property details as needed -->
+                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary">View Details</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_scripts %}
+<!-- Additional scripts if needed -->
+{% endblock %}

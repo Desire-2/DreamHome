@@ -1,0 +1,56 @@
+<!-- add_property.html -->
+{% extends 'base.html' %}
+{% block title %}Add Property{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Add Property</h2>
+    <form method="POST">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" name="title" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <textarea name="description" class="form-control" required></textarea>
+        </div>
+        <div class="form-group">
+            <label>Price</label>
+            <input type="number" name="price" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Number of Bedrooms</label>
+            <input type="number" name="num_bedrooms" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Number of Bathrooms</label>
+            <input type="number" name="num_bathrooms" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Area (in square meters)</label>
+            <input type="number" name="area" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Location</label>
+            <input type="text" name="location" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Image URL</label>
+            <input type="url" name="image_url" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Year Built</label>
+            <input type="number" name="year_built" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Property Type</label>
+            <input type="text" name="property_type" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label>Amenities</label>
+            <input type="text" name="amenities" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}

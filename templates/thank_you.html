@@ -1,0 +1,19 @@
+<!-- thank_you.html -->
+{% extends 'base.html' %}
+
+{% block title %}Thank You - Flask Real Estate{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card mt-4">
+            <div class="card-body">
+                <h2 class="card-title">Thank You!</h2>
+                <p>Your message has been sent successfully.</p>
+                <p>We will get back to you as soon as possible.</p>
+                <a href="{{ url_for('property.view_properties') }}" class="btn btn-primary">Back to Properties</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

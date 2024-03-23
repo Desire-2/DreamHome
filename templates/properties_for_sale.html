@@ -1,0 +1,91 @@
+<!-- properties_for_sale.html -->
+{% extends 'base.html' %}
+
+{% block title %}Properties for Sale{% endblock %}
+
+{% block extra_styles %}
+    <style>
+        .container {
+            padding: 20px;
+        }
+
+        .property-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 40px;
+        }
+
+        .property {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .property:hover {
+            transform: translateY(-5px);
+        }
+
+        .property h3 {
+            margin-top: 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .property p {
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .property .price {
+            font-size: 16px;
+            color: #ff6600;
+            font-weight: bold;
+        }
+
+        .property img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .property .btn-details {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            border: 10px solid black;
+        }
+
+        .property .btn-details:hover {
+            background-color: #0056b3;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h2>Properties for Sale</h2>
+        <div class="property-list">
+            <!-- Display properties for sale -->
+            {% for property in properties %}
+                <div class="property">
+                    <img src="{{ property.image_url }}" alt="{{ property.title }}">
+                    <h3>{{ property.title }}</h3>
+                    <p>Description: {{ property.description }}</p>
+                    <p class="price">Price: ${{ property.price }}</p>
+                    <!-- Add more property details as needed -->
+                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn-details">View Details</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

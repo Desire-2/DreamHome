@@ -1,0 +1,23 @@
+<!-- In your templates/view_reports.html file -->
+
+{% extends 'base.html' %}
+
+{% block title %}View Reports{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>View Reports</h2>
+
+    <!-- Display the list of reports -->
+    <ul>
+        {% for report in report_data %}
+        <li>
+            <h3>{{ report.title }}</h3>
+            <p>{{ report.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Add any additional elements or styling as needed -->
+</div>
+{% endblock %}

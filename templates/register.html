@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="register-container">
+    <h2>Register</h2>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-info">
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endwith %}
+    <form method="POST">
+        {{ form.hidden_tag() }} {# Include hidden fields for CSRF protection #}
+        <div class="form-group">
+            {{ form.username.label }} {# Render the label for the username field #}
+            {{ form.username(class="form-control") }} {# Render the username input field #}
+        </div>
+        <div class="form-group">
+            {{ form.email.label }} {# Render the label for the email field #}
+            {{ form.email(class="form-control") }} {# Render the email input field #}
+        </div>
+        <div class="form-group">
+            {{ form.password.label }} {# Render the label for the password field #}
+            {{ form.password(class="form-control") }} {# Render the password input field #}
+        </div>
+        <div class="form-group">
+            {{ form.confirm_password.label }} {# Render the label for the confirm password field #}
+            {{ form.confirm_password(class="form-control") }} {# Render the confirm password input field #}
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+</div>
+{% endblock %}

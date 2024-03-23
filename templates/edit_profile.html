@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Edit Profile{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Edit Your Profile</h2>
+
+    <!-- Display form for editing user information -->
+    <form method="POST">
+        <!-- CSRF Token -->
+        {{ form.hidden_tag() }}
+
+        <!-- Username -->
+        <div class="form-group">
+            <label for="username">Username</label>
+            {{ form.username(class="form-control", readonly=true) }}
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label for="email">Email</label>
+            {{ form.email(class="form-control") }}
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary">Update Profile</button>
+    </form>
+</div>
+{% endblock %}

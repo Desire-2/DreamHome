@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %}Manage Admins{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Manage Admins</h2>
+    
+    <!-- Display flash messages -->
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <div class="alert alert-info">
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+    {% endwith %}
+    
+    <!-- Form to add a new admin -->
+    <form method="POST" id="addAdminForm">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" class="form-control" required>
+            <small class="form-text text-muted">Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Admin</button>
+    </form>
+    
+    <hr>
+
+    <!-- Display existing admins with delete button -->
+    <h3>Existing Admins:</h3>
+    <ul class="list-group">
+        {% for admin in admins %}
+            <li class="list-group-item">{{ admin.username }} - {{ admin.email }}
+                <form method="POST" class="delete-form" style="display: inline;">
+                    <input type="hidden" name="admin_id" value="{{ admin.id }}">
+                    <button type="submit" class="btn btn-danger btn-sm delete-btn">Delete</button>
+                </form>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<script>
+    // JavaScript to handle form submission and confirmation for deleting an admin
+    document.querySelectorAll('.delete-form').forEach(form => {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            // Show confirmation dialog
+            if (confirm("Are you sure you want to delete this admin?")) {
+                this.submit(); // Submit the form
+            }
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% block title %}Property Search{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Property Search</h2>
+    <form method="GET" action="{{ url_for('search_properties') }}">
+        <div class="form-group">
+            <label for="query">Search:</label>
+            <input type="text" class="form-control" id="query" name="query" placeholder="Enter keywords">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="location">Location:</label>
+                <input type="text" class="form-control" id="location" name="location" placeholder="City or area">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="min_price">Min Price:</label>
+                <input type="number" class="form-control" id="min_price" name="min_price">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="max_price">Max Price:</label>
+                <input type="number" class="form-control" id="max_price" name="max_price">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="min_bedrooms">Min Bedrooms:</label>
+                <input type="number" class="form-control" id="min_bedrooms" name="min_bedrooms">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="max_bedrooms">Max Bedrooms:</label>
+                <input type="number" class="form-control" id="max_bedrooms" name="max_bedrooms">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="sort_by">Sort By:</label>
+                <select class="form-control" id="sort_by" name="sort_by">
+                    <option value="id">Default</option>
+                    <option value="price">Price</option>
+                    <option value="num_bedrooms">Bedrooms</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="order">Sort Order:</label>
+            <select class="form-control" id="order" name="order">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
+
+    {% if results %}
+    <h3>Search Results</h3>
+    <div class="list-group">
+        {% for property in results.items %}
+        <a href="{{ url_for('property_listing', id=property.id) }}" class="list-group-item list-group-item-action">
+            <h5 class="mb-1">{{ property.title }}</h5>
+            <p class="mb-1">{{ property.description }}</p>
+            <small>Price: ${{ property.price }}</small>
+        </a>
+        {% endfor %}
+    </div>
+
+    {% if results.has_prev or results.has_next %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if results.has_prev %}
+            <li class="page-item">
+                <a class="page-link" href="{{ url_for('search_properties', page=results.prev_num) }}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            {% endif %}
+            {% for page_num in results.iter_pages() %}
+            {% if page_num %}
+            <li class="page-item {% if page_num == results.page %}active{% endif %}">
+                <a class="page-link" href="{{ url_for('search_properties', page=page_num) }}">{{ page_num }}</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <span class="page-link">...</span>
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% if results.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="{{ url_for('search_properties', page=results.prev_num) }}" aria-label="Previous">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
+    {% endif %}
+</div>
+{% endblock %}
