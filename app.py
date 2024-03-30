@@ -1,15 +1,18 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
 import logging
 from flask_migrate import Migrate
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
+from werkzeug.utils import secure_filename
 from forms import RegistrationForm
 from forms import EditProfileForm
 import pandas as pd
 from io import BytesIO
+import os
 
+UPLOAD_FOLDER = os.path.join('static', 'images')
 
 
 
@@ -30,15 +33,22 @@ app.config['MAIL_PORT'] = 587  # Update with your SMTP port
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'your_email@example.com'  # Update with your email credentials
 app.config['MAIL_PASSWORD'] = 'your_email_password'  # Update with your email password
-app.config['MAIL_DEFAULT_SENDER'] = 'your_email@example.com' 
+app.config['MAIL_DEFAULT_SENDER'] = 'your_email@example.com'
+
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 mail = Mail(app)
 
-from models import Property, Agent, db, User
+from models import Property, db, User, Image
 db.init_app(app)
 migrate = Migrate(app, db)
 
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
 
+@app.route('/uploads/<filename>')
+def uploaded_file(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -257,18 +267,25 @@ def manage_agents():
     agents = Agent.query.all()
     return render_template('manage_agents.html', agents=agents)
 
-
 @app.route('/dashboard')
 @login_required
 def dashboard():
     # Fetch user-specific data from the database
-    user_properties = Property.query.filter_by(agent_id=current_user.id).all()
+    user_properties = Property.query.all()
     return render_template('dashboard.html', properties=user_properties, logged_in=True)
+
+# Define the allowed file extensions
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
+
+# Function to check if a file has an allowed extension
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route('/add-property', methods=['GET', 'POST'])
 @login_required
 def add_property():
     if request.method == 'POST':
+        # Extract property data from the form
         title = request.form['title']
         description = request.form['description']
         price = request.form['price']
@@ -276,25 +293,48 @@ def add_property():
         num_bathrooms = request.form['num_bathrooms']
         area = request.form['area']
         location = request.form['location']
-        image_url = request.form['image_url']
         year_built = request.form['year_built']
         property_type = request.form['property_type']
         amenities = request.form['amenities']
-        
+
+        # Check if files were uploaded
+        if 'image' not in request.files:
+            flash('No file part', 'error')
+            return redirect(request.url)
+
+        # Get the uploaded files
+        files = request.files.getlist('image')
+
         # Create a new Property object
-        new_property = Property(title=title, description=description, price=price,
-                                num_bedrooms=num_bedrooms, num_bathrooms=num_bathrooms,
-                                area=area, location=location, image_url=image_url,
-                                year_built=year_built, property_type=property_type,
-                                amenities=amenities, agent=current_user)
-        
-        # Add the property to the database session and commit the transaction
+        new_property = Property(
+            title=title, description=description, price=price,
+            num_bedrooms=num_bedrooms, num_bathrooms=num_bathrooms,
+            area=area, location=location, year_built=year_built,
+            property_type=property_type, amenities=amenities
+        )
+
+        # Process each uploaded file
+        for file in files:
+            if file and allowed_file(file.filename):
+                # Create a new Image object for each file
+                image = Image(filename=file.filename)
+                # Associate the image with the property
+                new_property.images.append(image)
+                # Save the file to the uploads folder
+                filename = secure_filename(file.filename)
+                file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+            else:
+                flash('Invalid file type', 'error')
+                return redirect(request.url)
+            print("Image URLs:", property.images)
+
+        # Add the property to the database session and commit
         db.session.add(new_property)
         db.session.commit()
-        
+
         flash('Property added successfully.', 'success')
-        return redirect(url_for('index'))
-    
+        return redirect(url_for('home'))
+
     return render_template('add_property.html')
 
 @app.route('/properties')
@@ -325,15 +365,22 @@ def modify_properties(property_id):
         property.price = float(request.form['price'])
         property.num_bedrooms = int(request.form['num_bedrooms'])
         property.num_bathrooms = int(request.form['num_bathrooms'])
-        property.area = float(request.form['area'])  # Add area
-        property.location = request.form['location']  # Add location
-        property.year_built = int(request.form['year_built'])  # Add year built
-        property.image_url = request.form['image_url']
-        # Update other property details as needed
+        property.location = request.form['location']
+        property.year_built = int(request.form['year_built'])
 
-        # Commit the changes to the database
+        # Check if any image files were uploaded
+        if 'images' in request.files:
+            images = request.files.getlist('images')
+            for image in images:
+                if image and allowed_file(image.filename):
+                    filename = secure_filename(image.filename)
+                    image_path = os.path.join(UPLOAD_FOLDER, filename)
+                    image.save(image_path)
+                    # Create a new Image object and associate it with the property
+                    new_image = Image(filename=filename, property_id=property.id)
+                    db.session.add(new_image)
+
         db.session.commit()
-
         # Redirect to the property details page or another appropriate route
         return redirect(url_for('property_listing', property_id=property.id))
 

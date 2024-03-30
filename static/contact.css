@@ -1,20 +1,66 @@
-.whatsapp-btn {
-    display: inline-block;
-    background-color: #25D366;
-    color: #fff;
+/* contact_styles.css */
+
+/* Style the container */
+.container {
+    margin-top: 50px;
+}
+
+/* Style the heading */
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333; /* Darken the text color */
+}
+
+/* Style the paragraph */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666; /* Darken the text color */
+}
+
+/* Style the form */
+form {
+    margin-bottom: 30px;
+}
+
+/* Style the form group labels */
+label {
+    font-weight: bold;
+    color: #333; /* Darken the text color */
+}
+
+/* Style the form control */
+.form-control {
+    border: 2px solid #ccc; /* Add border */
+    border-radius: 8px;
+    transition: border-color 0.3s ease; /* Add transition */
+}
+
+/* Style the form control on focus */
+.form-control:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: none; /* Remove default box shadow */
+}
+
+/* Style the submit button */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
     padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
 }
 
-.whatsapp-btn img {
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
+.btn-primary:hover {
+    background-color: #0056b3; /* Darken the background color on hover */
 }
 
+/* Style the WhatsApp chat button */
+
+
 .whatsapp-btn:hover {
-    background-color: #128C7E;
+    background-color: #128c7e; /* Darken the background color on hover */
 }

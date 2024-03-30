@@ -22,28 +22,19 @@ class Property(db.Model):
     is_featured = db.Column(db.Boolean, default=False)
     is_for_sale = db.Column(db.Boolean, default=True)
     is_for_rent = db.Column(db.Boolean, default=False)
+
+    images = db.relationship('Image', backref='property', lazy=True)
     views = db.Column(db.Integer, default=0)
 
-    agent_id = db.Column(db.Integer, db.ForeignKey('agents.id'))
-    agent = db.relationship('Agent', back_populates='listed_properties')
-
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    user = db.relationship('User', backref='owned_properties_user', foreign_keys=[user_id], overlaps="owned_properties_user")
+    user = db.relationship('User', back_populates='properties')
 
-    owner_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    owner = db.relationship('User', foreign_keys=[owner_id], overlaps="owned_properties_user")
 
-class Agent(db.Model):
-    __tablename__ = 'agents'
-
+class Image(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
-    phone = db.Column(db.String(20))
+    filename = db.Column(db.String(100), nullable=False)
+    property_id = db.Column(db.Integer, db.ForeignKey('properties.id'), nullable=False)  # Corrected foreign key definition
 
-    # Relationship with Property
-    listed_properties = db.relationship('Property', back_populates='agent')
-    
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
 
@@ -53,7 +44,7 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
     
-    properties = db.relationship('Property', foreign_keys='Property.user_id', backref='owned_by_user', overlaps="owned_properties_user")
+    properties = db.relationship('Property', foreign_keys='Property.user_id', backref='users', overlaps="owned_properties_user")
 
     def set_password(self, password):
         """Set the password securely."""

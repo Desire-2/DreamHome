@@ -6,6 +6,12 @@
     <title>Kigali Inspectify Ltd</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='dashboard.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contact.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='search.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='property_detail.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='admin_dashboard.css') }}">
+    
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Add other CSS files if needed -->
     <style>
@@ -15,6 +21,7 @@
             color: #fff;
             border-radius: 0;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            justify-content: space-between;
         }
         .navbar-brand {
             font-weight: bold;
@@ -37,7 +44,7 @@
         .sub-menu {
             display: none;
             position: absolute;
-            background-color: #3f51b5; /* Deep Purple */
+            background-color: #fff; /* Light background */
             z-index: 1;
             padding: 10px;
             border-radius: 0 0 5px 5px;
@@ -48,6 +55,12 @@
         }
         .sub-menu li {
             margin-bottom: 5px;
+        }
+        .sub-menu .nav-link {
+            color: #000 !important; /* Dark text for submenu */
+        }
+        .sub-menu .nav-link:hover {
+            color: #3f51b5 !important; /* Deep Purple on hover */
         }
     </style>
 </head>

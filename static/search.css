@@ -1,0 +1,108 @@
+/* styles.css */
+
+/* Style the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the form labels */
+label {
+    font-weight: bold;
+}
+
+/* Style the form row */
+.form-row {
+    margin-bottom: 20px;
+}
+
+/* Style the form select options */
+select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px;
+    padding-right: 30px;
+}
+
+/* Style the pagination links */
+.page-item {
+    margin: 0 5px;
+}
+
+/* Style the active pagination link */
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Style the disabled pagination link */
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+/* Style the pagination navigation */
+.pagination {
+    justify-content: center;
+}
+
+/* Add hover effect to search result items */
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Adjust padding for search result items */
+.list-group-item {
+    padding: 20px;
+}
+
+/* Style the search button */
+.btn-primary {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Style the search button on hover */
+.btn-primary:hover {
+    background-color: #218838;
+    border-color: #218838;
+}
+
+/* Style the search button text */
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+}
+
+/* Style the search button text on focus */
+.btn-primary:focus, .btn-primary.focus {
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}
+
+/* Style the search button text on active */
+.btn-primary.active, .btn-primary:active {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+/* Style the search button text on disabled */
+.btn-primary.disabled, .btn-primary:disabled {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+/* Style the search button text on not disabled */
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #1e7e34;
+    border-color: #1c7430;
+}
+
+/* Style the search button text on not disabled */
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus {
+    box-shadow: 0 0 0 0.2rem rgba(72, 180, 97, 0.5);
+}

@@ -1,0 +1,58 @@
+/* styles.css */
+
+/* Style the jumbotron */
+.jumbotron {
+    background-image: url('House.jpg'); /* Add your background image */
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+
+/* Style the jumbotron heading */
+.jumbotron h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Style the jumbotron paragraph */
+.jumbotron p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Style the property cards */
+.property-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect to property cards */
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the property card image */
+.property-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style the property card heading */
+.property-card h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Style the property card details */
+.property-card p {
+    color: #666;
+}

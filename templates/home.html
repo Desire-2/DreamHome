@@ -80,7 +80,7 @@
             {% for property in recently_added_properties %}
             <div class="col-md-4">
                 <div class="property-card">
-                    <img src="{{ property.image_url }}" alt="{{ property.title }}">
+                    <img src="{{ property.images }}" alt="{{ property.title }}">
                     <h3>{{ property.title }}</h3>
                     <p><strong>Price:</strong> ${{ property.price }}</p>
                     <p><strong>Location:</strong> {{ property.location }}</p>
@@ -103,7 +103,7 @@
             {% for property in most_viewed_properties %}
             <div class="col-md-4">
                 <div class="property-card">
-                    <img src="{{ property.image_url }}" alt="{{ property.title }}">
+                    <img src="{{ property.images }}" alt="{{ property.title }}">
                     <h3>{{ property.title }}</h3>
                     <p><strong>Price:</strong> ${{ property.price }}</p>
                     <p><strong>Location:</strong> {{ property.location }}</p>

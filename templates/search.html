@@ -3,63 +3,66 @@
 
 {% block content %}
 <div class="container">
-    <h2>Property Search</h2>
+    <h2 class="text-center mb-4">Find Your Dream Property</h2>
     <form method="GET" action="{{ url_for('search_properties') }}">
-        <div class="form-group">
-            <label for="query">Search:</label>
-            <input type="text" class="form-control" id="query" name="query" placeholder="Enter keywords">
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="location">Location:</label>
-                <input type="text" class="form-control" id="location" name="location" placeholder="City or area">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="min_price">Min Price:</label>
-                <input type="number" class="form-control" id="min_price" name="min_price">
-            </div>
-            <div class="form-group col-md-4">
-                <label for="max_price">Max Price:</label>
-                <input type="number" class="form-control" id="max_price" name="max_price">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="query" name="query" placeholder="Enter keywords">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-4">
-                <label for="min_bedrooms">Min Bedrooms:</label>
-                <input type="number" class="form-control" id="min_bedrooms" name="min_bedrooms">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" class="form-control mb-3" id="location" name="location" placeholder="City or area">
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="min_price" name="min_price" placeholder="Min Price">
+                    <div class="input-group-append">
+                        <span class="input-group-text">$</span>
+                    </div>
+                </div>
             </div>
-            <div class="form-group col-md-4">
-                <label for="max_bedrooms">Max Bedrooms:</label>
-                <input type="number" class="form-control" id="max_bedrooms" name="max_bedrooms">
+            <div class="col-md-4">
+                <input type="number" class="form-control mb-3" id="max_price" name="max_price" placeholder="Max Price">
+                <div class="input-group mb-3">
+                    <input type="number" class="form-control" id="min_bedrooms" name="min_bedrooms" placeholder="Min Bedrooms">
+                    <div class="input-group-append">
+                        <span class="input-group-text"><i class="fas fa-bed"></i></span>
+                    </div>
+                </div>
             </div>
-            <div class="form-group col-md-4">
-                <label for="sort_by">Sort By:</label>
-                <select class="form-control" id="sort_by" name="sort_by">
-                    <option value="id">Default</option>
+            <div class="col-md-4">
+                <input type="number" class="form-control mb-3" id="max_bedrooms" name="max_bedrooms" placeholder="Max Bedrooms">
+                <select class="form-control mb-3" id="sort_by" name="sort_by">
+                    <option value="id">Sort By</option>
                     <option value="price">Price</option>
                     <option value="num_bedrooms">Bedrooms</option>
                 </select>
+                <select class="form-control mb-3" id="order" name="order">
+                    <option value="asc">Sort Order</option>
+                    <option value="desc">Descending</option>
+                </select>
             </div>
         </div>
-        <div class="form-group">
-            <label for="order">Sort Order:</label>
-            <select class="form-control" id="order" name="order">
-                <option value="asc">Ascending</option>
-                <option value="desc">Descending</option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Search</button>
     </form>
 
     {% if results %}
-    <h3>Search Results</h3>
-    <div class="list-group">
+    <h3 class="text-center my-4">Search Results</h3>
+    <div class="row">
         {% for property in results.items %}
-        <a href="{{ url_for('property_listing', id=property.id) }}" class="list-group-item list-group-item-action">
-            <h5 class="mb-1">{{ property.title }}</h5>
-            <p class="mb-1">{{ property.description }}</p>
-            <small>Price: ${{ property.price }}</small>
-        </a>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ property.image_url }}" class="card-img-top" alt="{{ property.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ property.title }}</h5>
+                    <p class="card-text">{{ property.description }}</p>
+                    <p class="card-text"><small class="text-muted">Price: ${{ property.price }}</small></p>
+                </div>
+            </div>
+        </div>
         {% endfor %}
     </div>
 
@@ -86,7 +89,7 @@
             {% endfor %}
             {% if results.has_next %}
             <li class="page-item">
-                <a class="page-link" href="{{ url_for('search_properties', page=results.prev_num) }}" aria-label="Previous">
+                <a class="page-link" href="{{ url_for('search_properties', page=results.next_num) }}" aria-label="Next">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
             </li>
