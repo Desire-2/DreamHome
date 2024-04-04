@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session, send_from_directory
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session, send_from_directory, current_app
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
 import logging
@@ -281,6 +281,22 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+@app.route('/properties')
+def view_properties():
+    properties = Property.query.filter_by(is_for_sale=True).all()
+    return render_template('properties.html', properties=properties)
+    
+
+@app.route('/property/<int:property_id>')
+def view_property(property_id):
+    property = Property.query.get_or_404(property_id)
+
+     # Increment the views count for the property
+    property.views += 1
+    db.session.commit()
+    
+    return render_template('property_detail.html', property=property)
+
 @app.route('/add-property', methods=['GET', 'POST'])
 @login_required
 def add_property():
@@ -313,23 +329,25 @@ def add_property():
             property_type=property_type, amenities=amenities
         )
 
+        # Add the property to the database session to generate the property ID
+        db.session.add(new_property)
+        db.session.commit()
+
         # Process each uploaded file
         for file in files:
             if file and allowed_file(file.filename):
-                # Create a new Image object for each file
-                image = Image(filename=file.filename)
-                # Associate the image with the property
-                new_property.images.append(image)
                 # Save the file to the uploads folder
                 filename = secure_filename(file.filename)
                 file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            else:
-                flash('Invalid file type', 'error')
-                return redirect(request.url)
-            print("Image URLs:", property.images)
 
-        # Add the property to the database session and commit
-        db.session.add(new_property)
+                # Generate URL for the uploaded image
+                image_url = url_for('uploaded_file', filename=filename)
+
+                # Create a new Image object for each file and associate it with the property
+                image = Image(filename=filename, url=image_url, property_id=new_property.id)
+                db.session.add(image)
+
+        # Commit the changes to the database session
         db.session.commit()
 
         flash('Property added successfully.', 'success')
@@ -337,21 +355,6 @@ def add_property():
 
     return render_template('add_property.html')
 
-@app.route('/properties')
-def view_properties():
-    properties = Property.query.filter_by(is_for_sale=True).all()
-    return render_template('properties.html', properties=properties)
-    
-
-@app.route('/property/<int:property_id>')
-def view_property(property_id):
-    property = Property.query.get_or_404(property_id)
-
-     # Increment the views count for the property
-    property.views += 1
-    db.session.commit()
-    
-    return render_template('property_detail.html', property=property)
 
 @app.route('/modify_properties/<int:property_id>', methods=['GET', 'POST'])
 def modify_properties(property_id):
@@ -379,6 +382,14 @@ def modify_properties(property_id):
                     # Create a new Image object and associate it with the property
                     new_image = Image(filename=filename, property_id=property.id)
                     db.session.add(new_image)
+
+                    # Remove the old image if it exists
+                    old_image = Image.query.filter_by(property_id=property.id).first()
+                    if old_image:
+                        old_image_path = os.path.join(UPLOAD_FOLDER, old_image.filename)
+                        if os.path.exists(old_image_path):
+                            os.remove(old_image_path)
+                        db.session.delete(old_image)
 
         db.session.commit()
         # Redirect to the property details page or another appropriate route

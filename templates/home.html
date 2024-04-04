@@ -48,7 +48,7 @@
 
 {% block content %}
 <div class="jumbotron">
-    <h1>Welcome to Kigali Inspectify Ltd</h1>
+    <h1>Welcome to Kigali Inspectify Ltd </h1>
     <p>Find your dream home with us</p>
     <!-- Search form -->
     <form action="{{ url_for('search_properties') }}" method="GET" class="form-inline justify-content-center mt-4">
@@ -70,50 +70,58 @@
     </form>
 </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Recently Added Properties</h2>
-            </div>
-        </div>
-        <div class="row">
-            {% for property in recently_added_properties %}
-            <div class="col-md-4">
-                <div class="property-card">
-                    <img src="{{ property.images }}" alt="{{ property.title }}">
-                    <h3>{{ property.title }}</h3>
-                    <p><strong>Price:</strong> ${{ property.price }}</p>
-                    <p><strong>Location:</strong> {{ property.location }}</p>
-                    <!-- Add more property details as needed -->
-                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-            {% endfor %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Recently Added Properties</h2>
         </div>
     </div>
-    
-    <!-- Add a section for most viewed properties -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Most Viewed Properties</h2>
+    <div class="row">
+        {% for property in recently_added_properties %}
+        <div class="col-md-4">
+            <div class="property-card">
+                {% if property.images %}
+                <img src="{{ property.images[0].url }}" alt="{{ property.title }}">
+                {% else %}
+                <img src="{{ url_for('static', filename='images/default.jpg') }}" alt="Default Image">
+                {% endif %}
+                <h3>{{ property.title }}</h3>
+                <p><strong>Price:</strong> ${{ property.price }}</p>
+                <p><strong>Location:</strong> {{ property.location }}</p>
+                <!-- Add more property details as needed -->
+                <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary">View Details</a>
             </div>
         </div>
-        <div class="row">
-            {% for property in most_viewed_properties %}
-            <div class="col-md-4">
-                <div class="property-card">
-                    <img src="{{ property.images }}" alt="{{ property.title }}">
-                    <h3>{{ property.title }}</h3>
-                    <p><strong>Price:</strong> ${{ property.price }}</p>
-                    <p><strong>Location:</strong> {{ property.location }}</p>
-                    <!-- Add more property details as needed -->
-                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary">View Details</a>
-                </div>
-            </div>
-            {% endfor %}
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Add a section for most viewed properties -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Most Viewed Properties</h2>
         </div>
     </div>
+    <div class="row">
+        {% for property in most_viewed_properties %}
+        <div class="col-md-4">
+            <div class="property-card">
+                {% if property.images %}
+                <img src="{{ property.images[0].url }}" alt="{{ property.title }}">
+                {% else %}
+                <img src="{{ url_for('static', filename='images/default.jpg') }}" alt="Default Image">
+                {% endif %}
+                <h3>{{ property.title }}</h3>
+                <p><strong>Price:</strong> ${{ property.price }}</p>
+                <p><strong>Location:</strong> {{ property.location }}</p>
+                <!-- Add more property details as needed -->
+                <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
 </div>
 {% endblock %}
 

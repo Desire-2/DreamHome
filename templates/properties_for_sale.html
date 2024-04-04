@@ -1,89 +1,123 @@
-<!-- properties_for_sale.html -->
 {% extends 'base.html' %}
 
 {% block title %}Properties for Sale{% endblock %}
 
 {% block extra_styles %}
     <style>
-        .container {
-            padding: 20px;
+        /* Additional Styles */
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
         }
 
         .property-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 40px;
+            grid-gap: 20px;
+            justify-items: center;
+            align-items: start;
         }
 
         .property {
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
         }
 
         .property:hover {
             transform: translateY(-5px);
         }
 
-        .property h3 {
-            margin-top: 0;
-            font-size: 18px;
-            font-weight: bold;
-            color: #333333;
-        }
-
-        .property p {
-            margin-bottom: 10px;
-            font-size: 14px;
-            color: #666666;
-        }
-
-        .property .price {
-            font-size: 16px;
-            color: #ff6600;
-            font-weight: bold;
-        }
-
         .property img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            object-fit: cover;
+        }
+
+        .property-details {
+            padding: 20px;
+        }
+
+        .property-title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .property-description {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .price {
+            font-size: 18px;
+            color: #00a8ff;
             margin-bottom: 10px;
         }
 
-        .property .btn-details {
-            background-color: #007bff;
-            color: #ffffff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
+        .btn-details {
             display: inline-block;
-            transition: background-color 0.3s ease;
-            border: 10px solid black;
+            padding: 10px 20px;
+            background-color: #00a8ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
         }
 
-        .property .btn-details:hover {
-            background-color: #0056b3;
+        .btn-details:hover {
+            background-color: #007bb5;
+        }
+
+        @media (max-width: 768px) {
+            .property-list {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+
+            .property-title {
+                font-size: 20px;
+            }
+
+            .property-description {
+                font-size: 14px;
+            }
+
+            .price {
+                font-size: 16px;
+            }
+
+            .btn-details {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
         }
     </style>
 {% endblock %}
 
 {% block content %}
     <div class="container">
-        <h2>Properties for Sale</h2>
+        <h2 class="section-title">Properties for Sale</h2>
         <div class="property-list">
-            <!-- Display properties for sale -->
             {% for property in properties %}
                 <div class="property">
-                    <img src="{{ property.image_url }}" alt="{{ property.title }}">
-                    <h3>{{ property.title }}</h3>
-                    <p>Description: {{ property.description }}</p>
-                    <p class="price">Price: ${{ property.price }}</p>
-                    <!-- Add more property details as needed -->
-                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn-details">View Details</a>
+                    {% if property.images %}
+                        <img src="{{ property.images[0].url }}" alt="{{ property.title }}">
+                    {% else %}
+                        <img src="{{ url_for('static', filename='images/default.jpg') }}" alt="Default Image">
+                    {% endif %}
+                    <div class="property-details">
+                        <h3 class="property-title">{{ property.title }}</h3>
+                        <p class="property-description">{{ property.description }}</p>
+                        <p class="price">Price: ${{ property.price }}</p>
+                        <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn-details">View Details</a>
+                    </div>
                 </div>
             {% endfor %}
         </div>

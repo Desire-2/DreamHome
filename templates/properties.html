@@ -107,7 +107,11 @@
         {% for property in properties %}
         <div class="col-md-4">
             <div class="property-card">
-                <img src="{{ property.image_url }}" alt="{{ property.title }}" class="property-image">
+                {% if property.images %}
+                <img src="{{ property.images[0].url }}" alt="{{ property.title }}">
+                {% else %}
+                <img src="{{ url_for('static', filename='images/default.jpg') }}" alt="Default Image">
+                {% endif %}
                 <div class="property-details">
                     <h2 class="property-title">{{ property.title }}</h2>
                     <p class="property-price">$ {{ property.price }}</p>
