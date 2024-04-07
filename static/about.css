@@ -1,0 +1,119 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #f8f8f8, #eaeaea);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.animated {
+    animation-duration: 1s;
+}
+
+.about-section {
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.about-subtitle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.about-list-item {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+}
+
+/* Flow Chart */
+.flow-chart {
+    margin-top: 40px;
+}
+
+.flow-chart-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.flow-chart-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flow-chart-node {
+    width: calc(20% - 10px);
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.flow-chart-node:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Icon Hover Effects */
+.contact-info i {
+    transition: transform 0.3s ease;
+}
+
+.contact-info i:hover {
+    transform: scale(1.1);
+}

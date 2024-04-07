@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session, send_from_directory, current_app
 from flask_sqlalchemy import SQLAlchemy
+from transformers import pipeline
 from flask_mail import Mail, Message
 import logging
 from flask_migrate import Migrate
@@ -9,8 +10,18 @@ from werkzeug.utils import secure_filename
 from forms import RegistrationForm
 from forms import EditProfileForm
 import pandas as pd
+import numpy as np
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense, Embedding
+import json
+import random
+import tensorflow as tf
 from io import BytesIO
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
 import os
+
 
 UPLOAD_FOLDER = os.path.join('static', 'images')
 
@@ -537,6 +548,79 @@ def blog_news():
 @app.route('/faq')
 def faq():
     return render_template('faq.html')
+
+# Configure logging
+logging.basicConfig(level=logging.DEBUG)
+
+# Load tokenizer configuration from JSON file
+with open('tokenizer.json', 'r') as f:
+    tokenizer_config = json.load(f)
+
+# Create a new Tokenizer object
+tokenizer = Tokenizer()
+tokenizer.__dict__.update(tokenizer_config)
+
+# Load trained model if available
+try:
+    model = tf.keras.models.load_model('trained_model.keras')
+    trained_model_available = True
+except (OSError, ValueError) as e:
+    logging.error(f"Error loading trained model: {e}")
+    trained_model_available = False
+
+# Load sample conversations and greetings from JSON file
+with open('sample_data.json', 'r') as f:
+    sample_data = json.load(f)
+    conversations = sample_data.get('conversations', [])
+    greetings = sample_data.get('greetings', [])
+
+# Maximum sequence length for padding
+max_len = 20  # Adjust as needed
+
+# Route for processing user messages
+@app.route('/process_message', methods=['POST'])
+def process_message():
+    data = request.get_json()
+    user_message = data['message']
+    
+    logging.debug(f"Received user message: {user_message}")
+    
+    # Check if the trained model is available
+    if trained_model_available:
+        response_text = get_agent_response_from_model(user_message)
+    else:
+        response_text = get_agent_response_from_data(user_message)
+    
+    logging.debug(f"Generated agent response: {response_text}")
+    
+    return jsonify({'agentResponse': response_text})
+
+def get_agent_response_from_model(user_message):
+    # Tokenize user message
+    user_sequence = tokenizer.texts_to_sequences([user_message])
+    user_padded = pad_sequences(user_sequence, maxlen=max_len, padding='post')
+    
+    # Predict response
+    response_sequence = model.predict(user_padded)[0]
+    response_indices = [np.argmax(response_sequence)]
+    response_text = tokenizer.sequences_to_texts(response_indices)[0].strip()
+    
+    return response_text
+
+def get_agent_response_from_data(user_message):
+    # Check if user message is a greeting
+    if user_message.lower() in greetings:
+        response_text = "Hello! How can I assist you today?"
+    else:
+        # Find the appropriate response from sample conversations
+        for pair in conversations:
+            if pair[0].lower() == user_message.lower():
+                response_text = pair[1]
+                break
+        else:
+            response_text = "I'm sorry, I didn't understand that."
+    
+    return response_text
 
 if __name__ == '__main__':
     app.run(debug=True)

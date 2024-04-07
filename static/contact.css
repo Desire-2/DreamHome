@@ -58,9 +58,28 @@ label {
     background-color: #0056b3; /* Darken the background color on hover */
 }
 
-/* Style the WhatsApp chat button */
+.whatsapp-btn {
+    display: block;
+    width: 30%;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #25d366;
+    color: #fff;
+    border: none;
+    border-radius: 60px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.whatsapp-btn img {
+    width: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
 
 .whatsapp-btn:hover {
-    background-color: #128c7e; /* Darken the background color on hover */
+    background-color: #128c7e;
 }

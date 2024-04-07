@@ -2,44 +2,12 @@
 
 {% block title %}Property Detail - {{ property.title }}{% endblock %}
 
-{% block styles %}
-<style>
-    /* Custom styles */
-    .property-detail-section {
-        font-family: 'Arial', sans-serif;
-        color: #333;
-    }
-
-    .property-description {
-        display: none;
-    }
-
-    .property-image {
-        cursor: pointer;
-        height: 200px; /* Set fixed height for images */
-        width: auto; /* Auto width to maintain aspect ratio */
-    }
-    
-    .side-panel {
-        background-color: #f8f9fa;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    #propertyMap {
-        height: 300px;
-        width: 100%;
-    }
-</style>
-{% endblock %}
-
 {% block content %}
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-8">
             <div class="property-detail-section">
-                <h2>{{ property.title }}</h2>
+                <h2 class="property-title">{{ property.title }}</h2>
                 <div id="propertyCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
                     <ol class="carousel-indicators">
                         {% for image in property.images %}
@@ -84,33 +52,42 @@
 </div>
 {% endblock %}
 
-{% block scripts %}
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-<script>
-    // Initialize Google Maps
-    function initMap() {
-        var propertyLocation = { lat: {{ property.latitude }}, lng: {{ property.longitude }} };
-        var map = new google.maps.Map(document.getElementById('propertyMap'), {
-            zoom: 15,
-            center: propertyLocation
-        });
-        var marker = new google.maps.Marker({
-            position: propertyLocation,
-            map: map
-        });
+{% block styles %}
+<style>
+    /* Custom CSS for properties_detail.html */
+
+    .property-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 
-    $(document).ready(function () {
-        // Toggle property description visibility
-        $('.toggle-description').click(function () {
-            $('.property-description').toggle();
-        });
+    .property-detail-section {
+        margin-bottom: 40px;
+    }
 
-        // Open full-size image in new window when clicked
-        $('.property-image').click(function () {
-            var imageUrl = $(this).attr('src');
-            window.open(imageUrl, '_blank');
-        });
-    });
-</script>
+    .carousel-item img {
+        border-radius: 10px;
+    }
+
+    .property-description {
+        display: none; /* Hide description by default */
+    }
+
+    .side-panel {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .property-info p {
+        margin-bottom: 10px;
+    }
+
+    #propertyMap {
+        height: 200px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+</style>
 {% endblock %}

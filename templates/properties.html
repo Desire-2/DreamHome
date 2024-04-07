@@ -117,7 +117,7 @@
                     <p class="property-price">$ {{ property.price }}</p>
                     <p class="property-location">{{ property.location }}</p>
                     <p class="property-description">{{ property.description }}</p>
-                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-view-details">View Details</a>
+                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary btn-view-details">View Details</a>
                     {% if current_user.is_authenticated and current_user.is_admin %}
                         <a href="{{ url_for('modify_properties', property_id=property.id) }}" class="btn btn-primary btn-modify">Modify</a>
                     {% endif %}

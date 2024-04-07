@@ -2,6 +2,46 @@
 
 {% block title %}Properties for Rent{% endblock %}
 
+{% block head %}
+    {{ super() }}
+    <style>
+        /* CSS styles here */
+        .section-properties {
+            padding: 40px 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Add the rest of the CSS styles here */
+        .property-contact {
+            margin-top: 15px;
+        }
+
+        .contact-email,
+        .contact-phone {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .contact-email a,
+        .contact-phone a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .contact-email a:hover,
+        .contact-phone a:hover {
+            color: #007bb5;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
     <section class="section-properties">
         <div class="container">
@@ -23,8 +63,12 @@
                             <h3 class="property-title">{{ property.title }}</h3>
                             <p class="property-description">{{ property.description }}</p>
                             <div class="property-info">
-                                <p class="property-price">$ {{ property.price }}</p>
-                                <!-- Add more property details as needed -->
+                                <p class="property-price">$ {{ property.price }} per month</p>
+                                <!-- Add more property details such as bedrooms, bathrooms, etc. -->
+                            </div>
+                            <div class="property-contact">
+                                <p class="contact-email">Email: <a href="mailto:{{ property.email }}">{{ property.email }}</a></p>
+                                <p class="contact-phone">Phone: <a href="tel:{{ property.phone }}">{{ property.phone }}</a></p>
                             </div>
                         </div>
                     </div>
@@ -33,117 +77,3 @@
         </div>
     </section>
 {% endblock %}
-
-<style>
-    .section-properties {
-        padding: 40px 0;
-        background-color: #f8f8f8;
-    }
-
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
-
-    .section-title {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #333;
-        font-size: 24px;
-        text-transform: uppercase;
-    }
-
-    .property-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .property {
-        width: calc(33.33% - 20px);
-        margin-bottom: 30px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        overflow: hidden;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .property:hover {
-        transform: translateY(-5px);
-    }
-
-    .property-image {
-        position: relative;
-    }
-
-    .property-image img {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .property:hover .property-image img {
-        transform: scale(1.05);
-    }
-
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .property:hover .overlay {
-        opacity: 1;
-    }
-
-    .btn-view-details {
-        padding: 10px 20px;
-        background-color: #00a8ff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 16px;
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    .btn-view-details:hover {
-        background-color: #007bb5;
-    }
-
-    .property-details {
-        padding: 20px;
-    }
-
-    .property-title {
-        font-size: 20px;
-        margin-bottom: 10px;
-        color: #333;
-    }
-
-    .property-description {
-        font-size: 16px;
-        margin-bottom: 15px;
-        color: #666;
-    }
-
-    .property-info {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .property-price {
-        font-size: 18px;
-        color: #00a8ff;
-    }
-</style>
