@@ -623,4 +623,4 @@ def get_agent_response_from_data(user_message):
     return response_text
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
