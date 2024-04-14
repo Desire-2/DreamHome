@@ -478,6 +478,7 @@ def contact():
 # Route for property listing (optional)
 @app.route('/properties')
 def property_listing():
+    properties = Property.query.all()
     return render_template('property_listing.html', properties=properties)
 
 # Route for properties for sale
