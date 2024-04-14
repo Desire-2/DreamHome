@@ -1,6 +1,7 @@
 absl-py
 alembic
 astunparse
+beautifulsoup4
 blinker
 cachetools
 certifi
