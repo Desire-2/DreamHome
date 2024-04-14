@@ -264,15 +264,7 @@ def view_users():
 @app.route('/view_reports')
 def view_reports():
     # Query the database to fetch report data
-    report_data = Report.query.all()
-
-    return render_template('view_reports.html', report_data=report_data)
-
-@app.route('/manage_agents')
-def manage_agents():
-    # Query all agents from the database
-    agents = Agent.query.all()
-    return render_template('manage_agents.html', agents=agents)
+    return render_template('view_reports.html')
 
 @app.route('/dashboard')
 @login_required
