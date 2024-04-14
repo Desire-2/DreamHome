@@ -1,7 +1,7 @@
 absl-py
 alembic
 astunparse
-blinke
+blinker
 cachetool
 certif
 charset-normalize
