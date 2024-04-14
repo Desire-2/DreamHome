@@ -11166,3 +11166,141 @@ INFO:werkzeug:127.0.0.1 - - [11/Apr/2024 15:38:58] "GET /static/icon/twitter.jpe
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2024 15:38:58] "GET /static/icon/instagram.jpeg HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2024 15:38:58] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
 INFO:werkzeug:127.0.0.1 - - [11/Apr/2024 15:38:58] "GET /static/House.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /static/contact.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /static/dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /static/property_detail.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /static/home.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /static/admin_dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /static/about.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:28] "GET /static/search.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:29] "GET /static/icon/facebook.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:29] "GET /static/icon/twitter.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:29] "GET /static/icon/instagram.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:32] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "GET /static/images/20240402_141049.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "GET /static/images/20240124_190556.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "GET /static/images/Screenshot_2024-03-28_231105.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "GET /static/House.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "GET /static/images/Screenshot_2024-03-14_163058.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "GET /static/images/20240402_151051.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "GET /static/images/Screenshot_2024-03-28_132445.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:33] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:34] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:35] "GET /properties HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:35] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/images/20240402_151051.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/images/Screenshot_2024-03-28_132445.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/images/Screenshot_2024-03-14_163058.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/images/Screenshot_2024-03-28_231105.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/images/20240124_190556.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/images/20240402_141049.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:36] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/House.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/images/20240402_141049.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/images/20240124_190556.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/images/Screenshot_2024-03-28_231105.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:45] "[36mGET /static/images/Screenshot_2024-03-28_132445.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:46] "[36mGET /static/images/Screenshot_2024-03-14_163058.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:46] "[36mGET /static/images/20240402_151051.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:46] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:46] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:18:46] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/images/20240402_141049.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/images/20240124_190556.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/images/Screenshot_2024-03-28_231105.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[36mGET /static/House.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:05] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/images/Screenshot_2024-03-14_163058.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/images/20240402_151051.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/images/Screenshot_2024-03-28_132445.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/images/20240402_141049.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 11:20:06] "[36mGET /static/images/Screenshot_2024-03-28_231105.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/House.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/images/20240402_141049.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/images/20240124_190556.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/images/Screenshot_2024-03-28_231105.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:28] "[36mGET /static/images/Screenshot_2024-03-14_163058.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[36mGET /static/images/20240402_151051.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[36mGET /static/images/Screenshot_2024-03-28_132445.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[33mGET /static/images/Screenshot_2024-03-12_234357.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[36mGET /static/images/Screenshot_2024-03-28_231105.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2024 12:47:29] "[36mGET /static/images/20240402_141049.jpg HTTP/1.1[0m" 304 -

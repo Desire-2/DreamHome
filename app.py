@@ -11,15 +11,11 @@ from forms import RegistrationForm
 from forms import EditProfileForm
 import pandas as pd
 import numpy as np
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Embedding
+from flask import send_file
 import json
 import random
 import tensorflow as tf
 from io import BytesIO
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.preprocessing.text import Tokenizer
 import os
 
 
@@ -456,46 +452,10 @@ def search_properties():
     # Render the search template with the paginated results and pagination metadata
     return render_template('search.html', results=paginated_results)
 
-
-@app.route('/contact-agent/<int:agent_id>', methods=['GET', 'POST'])
-def contact_agent(agent_id):
-    agent = Agent.query.get_or_404(agent_id)
-    if request.method == 'POST':
-        name = request.form['name']
-        email = request.form['email']
-        message_body = request.form['message']
-        
-        # Send email to the agent
-        msg = Message('Message from a Client', recipients=[agent.email])
-        msg.body = f'Name: {name}\nEmail: {email}\nMessage: {message_body}'
-        
-        try:
-            mail.send(msg)
-            return redirect(url_for('thank_you'))
-        except Exception as e:
-            return "An error occurred while sending the email."
-        
-    return render_template('contact_agent.html', agent=agent)
-
 @app.route('/thank-you')
 def thank_you():
     return render_template('thank_you.html')
-# Route for displaying featured properties
-@app.route('/featured-properties')
-def featured_properties():
-    try:
-        # Fetch featured properties from the database (paginate if needed)
-        page = request.args.get('page', 1, type=int)
-        per_page = 10  # Number of featured properties per page
-        featured_properties = Property.query.filter_by(is_featured=True).paginate(page, per_page, error_out=False)
 
-        return render_template('featured_properties.html', featured_properties=featured_properties)
-    except Exception as e:
-        # Log the error
-        logging.error(f"An error occurred: {str(e)}")
-
-        # Display a friendly error message to the user
-        return render_template('error.html', message="An error occurred while retrieving featured properties. Please try again later.")
 @app.route('/services')
 def services():
     return render_template('services.html')
@@ -548,79 +508,6 @@ def blog_news():
 @app.route('/faq')
 def faq():
     return render_template('faq.html')
-
-# Configure logging
-logging.basicConfig(level=logging.DEBUG)
-
-# Load tokenizer configuration from JSON file
-with open('tokenizer.json', 'r') as f:
-    tokenizer_config = json.load(f)
-
-# Create a new Tokenizer object
-tokenizer = Tokenizer()
-tokenizer.__dict__.update(tokenizer_config)
-
-# Load trained model if available
-try:
-    model = tf.keras.models.load_model('trained_model.keras')
-    trained_model_available = True
-except (OSError, ValueError) as e:
-    logging.error(f"Error loading trained model: {e}")
-    trained_model_available = False
-
-# Load sample conversations and greetings from JSON file
-with open('sample_data.json', 'r') as f:
-    sample_data = json.load(f)
-    conversations = sample_data.get('conversations', [])
-    greetings = sample_data.get('greetings', [])
-
-# Maximum sequence length for padding
-max_len = 20  # Adjust as needed
-
-# Route for processing user messages
-@app.route('/process_message', methods=['POST'])
-def process_message():
-    data = request.get_json()
-    user_message = data['message']
-    
-    logging.debug(f"Received user message: {user_message}")
-    
-    # Check if the trained model is available
-    if trained_model_available:
-        response_text = get_agent_response_from_model(user_message)
-    else:
-        response_text = get_agent_response_from_data(user_message)
-    
-    logging.debug(f"Generated agent response: {response_text}")
-    
-    return jsonify({'agentResponse': response_text})
-
-def get_agent_response_from_model(user_message):
-    # Tokenize user message
-    user_sequence = tokenizer.texts_to_sequences([user_message])
-    user_padded = pad_sequences(user_sequence, maxlen=max_len, padding='post')
-    
-    # Predict response
-    response_sequence = model.predict(user_padded)[0]
-    response_indices = [np.argmax(response_sequence)]
-    response_text = tokenizer.sequences_to_texts(response_indices)[0].strip()
-    
-    return response_text
-
-def get_agent_response_from_data(user_message):
-    # Check if user message is a greeting
-    if user_message.lower() in greetings:
-        response_text = "Hello! How can I assist you today?"
-    else:
-        # Find the appropriate response from sample conversations
-        for pair in conversations:
-            if pair[0].lower() == user_message.lower():
-                response_text = pair[1]
-                break
-        else:
-            response_text = "I'm sorry, I didn't understand that."
-    
-    return response_text
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000)
