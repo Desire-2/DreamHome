@@ -16,7 +16,6 @@ def app():
 def client(app):
     return app.test_client()
 
-
 def test_delete_property(client):
     property = Property(title='Test Property', description='Test Description', price=100000)
     db.session.add(property)
@@ -62,7 +61,6 @@ def test_property_creation(client):
     assert retrieved_property.description == 'Test Description'
     assert retrieved_property.price == 100000
 
-
 def test_property_relationships(client):
     # Create a new user
     user = User(username='testuser', email='test@example.com', password='password')
@@ -81,7 +79,7 @@ def test_property_relationships(client):
     assert len(retrieved_user.properties) == 1
     assert retrieved_user.properties[0].title == 'Test Property'
 
-def test_property_deletion(client):
+def test_delete_property(client):
     # Create a new property
     property = Property(title='Test Property', description='Test Description', price=100000)
     db.session.add(property)
@@ -96,12 +94,6 @@ def test_property_deletion(client):
 
     # Assert that the property was successfully deleted
     assert retrieved_property is None
-
-
-
-
-
-
 
 if __name__ == '__main__':
     pytest.main()
