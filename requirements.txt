@@ -2,7 +2,7 @@ absl-py
 alembic
 astunparse
 blinker
-cachetool
+cachetools
 certif
 charset-normalize
 clic
