@@ -1,6 +1,6 @@
 absl-py
 alembic
-astunpars
+astunparse
 blinke
 cachetool
 certif
