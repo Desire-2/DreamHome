@@ -5,7 +5,7 @@ import pytest
 def app():
     from flask import Flask
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:site.db:'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
     db.init_app(app)
     with app.app_context():
         db.create_all()
@@ -79,7 +79,7 @@ def test_property_relationships(client):
     assert len(retrieved_user.properties) == 1
     assert retrieved_user.properties[0].title == 'Test Property'
 
-def test_delete_property(client):
+def test_delete_property_again(client):  # Renamed to avoid duplicate test names
     # Create a new property
     property = Property(title='Test Property', description='Test Description', price=100000)
     db.session.add(property)
