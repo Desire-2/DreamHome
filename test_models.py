@@ -79,21 +79,5 @@ def test_property_relationships(client):
     assert len(retrieved_user.properties) == 1
     assert retrieved_user.properties[0].title == 'Test Property'
 
-def test_delete_property_again(client):  # Renamed to avoid duplicate test names
-    # Create a new property
-    property = Property(title='Test Property', description='Test Description', price=100000)
-    db.session.add(property)
-    db.session.commit()
-
-    # Delete the property
-    db.session.delete(property)
-    db.session.commit()
-
-    # Try to retrieve the deleted property from the database
-    retrieved_property = Property.query.filter_by(title='Test Property').first()
-
-    # Assert that the property was successfully deleted
-    assert retrieved_property is None
-
 if __name__ == '__main__':
     pytest.main()
