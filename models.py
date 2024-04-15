@@ -68,7 +68,7 @@ class User(UserMixin, db.Model):
     password = db.Column(db.String(128), nullable=False)
     is_admin = db.Column(db.Boolean, default=False)
     
-    properties = db.relationship('Property', foreign_keys='Property.user_id', backref='users', overlaps="owned_properties_user")
+    properties = db.relationship('Property', foreign_keys='Property.user_id', backref='users', overlaps="user", viewonly=True)
 
     def set_password(self, password):
         """Set the password securely."""
