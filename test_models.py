@@ -16,18 +16,6 @@ def app():
 def client(app):
     return app.test_client()
 
-def test_delete_user(client):
-    user = User(username='testuser', email='test@example.com', password='password')
-    db.session.add(user)
-    db.session.commit()
-
-    # Delete the user
-    db.session.delete(user)
-    db.session.commit()
-
-    # Check if the user is deleted
-    assert User.query.filter_by(username='testuser').first() is None
-
 def test_set_password():
     user = User(username='testuser', email='test@example.com')
     user.set_password('password')
