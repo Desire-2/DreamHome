@@ -27,7 +27,7 @@ class Property(db.Model):
     views = db.Column(db.Integer, default=0)
 
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    user = db.relationship('User', back_populates='properties')
+    user = db.relationship('User', back_populates='properties', overlaps="user")
     
 class Image(db.Model):
     id = db.Column(db.Integer, primary_key=True)
