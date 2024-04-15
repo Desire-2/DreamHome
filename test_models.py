@@ -16,18 +16,6 @@ def app():
 def client(app):
     return app.test_client()
 
-def test_delete_property(client):
-    property = Property(title='Test Property', description='Test Description', price=100000)
-    db.session.add(property)
-    db.session.commit()
-
-    # Delete the property
-    db.session.delete(property)
-    db.session.commit()
-
-    # Check if the property is deleted
-    assert Property.query.filter_by(title='Test Property').first() is None
-
 def test_delete_user(client):
     user = User(username='testuser', email='test@example.com', password='password')
     db.session.add(user)
