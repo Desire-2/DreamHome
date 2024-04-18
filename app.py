@@ -8,7 +8,7 @@ from flask_login import LoginManager, login_user, logout_user, login_required, c
 from werkzeug.security import generate_password_hash, check_password_hash
 from werkzeug.utils import secure_filename
 from forms import RegistrationForm
-from forms import EditProfileForm
+from forms import EditProfileForm, AdminForm
 import pandas as pd
 import numpy as np
 from flask import send_file
@@ -176,36 +176,72 @@ def admin_dashboard():
     users = User.query.all()
     return render_template('admin_dashboard.html', properties=properties, user_id=user_id, users=users)
 
-@app.route('/admin/manage_admins', methods=['GET', 'POST'])
+# Route to view admins
+@app.route('/admin/manage_admins')
 @login_required
 def manage_admins():
-    # Ensure the current user is an admin
     if not current_user.is_admin:
-        return redirect(url_for('admin_dashboard'))  # Redirect to the admin dashboard or another route
+        flash('You are not authorized to access this page.', 'error')
+        return redirect(url_for('admin_dashboard'))
 
-    if request.method == 'POST':
-        # Logic for adding, deleting, or modifying admins
-        # Example: Add a new admin
-        username = request.form.get('username')
-        email = request.form.get('email')
-        password = request.form.get('password')
+    admins = User.query.filter_by(is_admin=True).all()
+    return render_template('manage_admins.html', admins=admins)
 
+# Route to add admin
+@app.route('/admin/add_admin', methods=['GET', 'POST'])
+@login_required
+def add_admin():
+    if not current_user.is_admin:
+        flash('You are not authorized to access this page.', 'error')
+        return redirect(url_for('admin_dashboard'))
+
+    form = AdminForm()
+    if form.validate_on_submit():
         # Create a new admin user
-        new_admin = User(username=username, email=email)
-        new_admin.set_password(password)
-        new_admin.is_admin = True
-
-        # Add the new admin to the database
+        new_admin = User(
+            username=form.username.data,
+            email=form.email.data,
+            password=form.password.data,
+            is_admin=True
+        )
         db.session.add(new_admin)
         db.session.commit()
-
-        # Redirect to the manage_admins route to refresh the page
+        flash('Admin added successfully.', 'success')
         return redirect(url_for('manage_admins'))
+    return render_template('add_admin.html', form=form)
 
-    # Retrieve existing admins from the database
-    admins = User.query.filter_by(is_admin=True).all()
+# Route to edit admin
+@app.route('/admin/edit_admin/<int:admin_id>', methods=['GET', 'POST'])
+@login_required
+def edit_admin(admin_id):
+    if not current_user.is_admin:
+        flash('You are not authorized to access this page.', 'error')
+        return redirect(url_for('admin_dashboard'))
 
-    return render_template('manage_admins.html', admins=admins)
+    admin = User.query.get_or_404(admin_id)
+    form = AdminForm(obj=admin)
+    if form.validate_on_submit():
+        admin.username = form.username.data
+        admin.email = form.email.data
+        admin.password = form.password.data
+        db.session.commit()
+        flash('Admin updated successfully.', 'success')
+        return redirect(url_for('manage_admins'))
+    return render_template('edit_admin.html', form=form, admin=admin)
+
+# Route to delete admin
+@app.route('/admin/delete_admin/<int:admin_id>', methods=['POST'])
+@login_required
+def delete_admin(admin_id):
+    if not current_user.is_admin:
+        flash('You are not authorized to access this page.', 'error')
+        return redirect(url_for('admin_dashboard'))
+
+    admin = User.query.get_or_404(admin_id)
+    db.session.delete(admin)
+    db.session.commit()
+    flash('Admin deleted successfully.', 'success')
+    return redirect(url_for('manage_admins'))
 
 @app.route('/admin/delete_property/<int:property_id>', methods=['POST'])
 @login_required
