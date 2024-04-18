@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Add Property{% endblock %}
+{% block title %}. : : Add Property : : .{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -8,7 +8,7 @@
     <!-- Flash Messages -->
     {% with messages = get_flashed_messages() %}
     {% if messages %}
-    <div class="alert alert-dismissible">
+    <div class="alert ">
         {% for message in messages %}
         <div class="alert alert-{{ message[1] }}" role="alert">
             {{ message[0] }}
