@@ -351,11 +351,14 @@ def add_property():
         price = request.form['price']
         num_bedrooms = request.form['num_bedrooms']
         num_bathrooms = request.form['num_bathrooms']
-        area = request.form['area']
         location = request.form['location']
         year_built = request.form['year_built']
         property_type = request.form['property_type']
         amenities = request.form['amenities']
+        
+        # Check if the property is for sale or for rent
+        is_for_sale = property_type == 'For Sale'
+        is_for_rent = property_type == 'For Rent'
 
         # Check if files were uploaded
         if 'image' not in request.files:
@@ -368,9 +371,8 @@ def add_property():
         # Create a new Property object
         new_property = Property(
             title=title, description=description, price=price,
-            num_bedrooms=num_bedrooms, num_bathrooms=num_bathrooms,
-            area=area, location=location, year_built=year_built,
-            property_type=property_type, amenities=amenities
+            num_bedrooms=num_bedrooms, num_bathrooms=num_bathrooms, location=location, year_built=year_built,
+             is_for_sale=is_for_sale, is_for_rent=is_for_rent, amenities=amenities
         )
 
         # Add the property to the database session to generate the property ID
