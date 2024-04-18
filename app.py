@@ -17,6 +17,8 @@ import random
 import tensorflow as tf
 from io import BytesIO
 import os
+from flask_login import current_user
+
 
 
 UPLOAD_FOLDER = os.path.join('static', 'images')
@@ -128,6 +130,7 @@ def register():
         return redirect(url_for('login'))
 
     return render_template('register.html', form=form)
+
 @app.route('/export_data')
 def export_data():
     # Query properties data from the database
@@ -170,7 +173,8 @@ def admin_dashboard():
 
     properties = Property.query.all()
     user_id = current_user.id  # This line is moved here to ensure it's always defined
-    return render_template('admin_dashboard.html', properties=properties, user_id=user_id)
+    users = User.query.all()
+    return render_template('admin_dashboard.html', properties=properties, user_id=user_id, users=users)
 
 @app.route('/admin/manage_admins', methods=['GET', 'POST'])
 @login_required
