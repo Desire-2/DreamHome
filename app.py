@@ -214,6 +214,11 @@ def delete_property(property_id):
     property = Property.query.get(property_id)
 
     if property:
+        # Delete associated images first
+        images = Image.query.filter_by(property_id=property_id).all()
+        for image in images:
+            db.session.delete(image)
+        
         # Delete the property from the database
         db.session.delete(property)
         db.session.commit()

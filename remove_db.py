@@ -1,23 +1,19 @@
-from app import app, db, Property, Agent
+from flask import Flask
+from models import Property, db
 
-# Define a function to remove existing records
-def remove_existing_records():
+# Create a Flask application instance
+app = Flask(__name__)
+
+# Assuming 'Property' is your SQLAlchemy model for properties
+
+# Function to delete all properties
+def delete_all_properties():
     with app.app_context():
-        # Query for existing agents
-        existing_agents = Agent.query.all()
-        # Delete existing agents
-        for agent in existing_agents:
-            db.session.delete(agent)
+        # Delete all properties
+        db.session.query(Property).delete()
 
-        # Query for existing properties
-        existing_properties = Property.query.all()
-        # Delete existing properties
-        for property in existing_properties:
-            db.session.delete(property)
-
-        # Commit the session to apply changes
+        # Commit the transaction to apply the changes
         db.session.commit()
 
-# Call the function to remove existing records
-remove_existing_records()
-
+# Call the function to delete all properties
+delete_all_properties()

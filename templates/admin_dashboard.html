@@ -8,6 +8,19 @@
 <div class="container">
     <h2 class="text-center mb-4">Welcome to Admin Dashboard, {{ current_user.username }}</h2>
 
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="alert alert-dismissible">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
     <!-- Section for managing properties -->
     <div class="row justify-content-center">
         <div class="col-md-12">
@@ -21,6 +34,12 @@
                                     <th>Title</th>
                                     <th>Description</th>
                                     <th>Price</th>
+                                    <th>Location</th>
+                                    <th>Area</th>
+                                    <th>Year Built</th>
+                                    <th>Property Type</th>
+                                    <th>Amenities</th>
+                                    <th>Image</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -31,6 +50,12 @@
                                             <td>{{ property.title }}</td>
                                             <td>{{ property.description }}</td>
                                             <td>${{ property.price }}</td>
+                                            <td>{{ property.location }}</td>
+                                            <td>{{ property.area }}</td>
+                                            <td>{{ property.year_built }}</td>
+                                            <td>{{ property.property_type }}</td>
+                                            <td>{{ property.amenities }}</td>
+                                            <td><img src="{{ property.image_url }}" alt="{{ property.title }}" style="max-width: 100px; max-height: 100px;"></td>
                                             <td>
                                                 <a href="{{ url_for('modify_properties', property_id=property.id) }}" class="btn btn-primary btn-sm">Modify</a>
                                                 <form action="{{ url_for('delete_property', property_id=property.id) }}" method="post" style="display: inline;">
@@ -41,7 +66,7 @@
                                     {% endfor %}
                                 {% else %}
                                     <tr>
-                                        <td colspan="4">No properties found.</td>
+                                        <td colspan="10">No properties found.</td>
                                     </tr>
                                 {% endif %}
                             </tbody>
@@ -93,5 +118,7 @@
             </div>
         </div>
     </div>
+
+    
 </div>
 {% endblock %}
