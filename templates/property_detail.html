@@ -42,7 +42,6 @@
                 <p><strong>Location:</strong> {{ property.location }}</p>
                 <p><strong>Bedrooms:</strong> {{ property.num_bedrooms }}</p>
                 <p><strong>Bathrooms:</strong> {{ property.num_bathrooms }}</p>
-                <p><strong>Area:</strong> {{ property.area }} sq. m</p>
                 <p><strong>Amenities:</strong><br>{{ property.amenities }}</p>
                 <p><strong>Year Built:</strong> {{ property.year_built }}</p>
                 <div id="propertyMap"></div>
@@ -71,6 +70,34 @@
 
     .property-description {
         display: none; /* Hide description by default */
+        transition: opacity 0.5s ease-in-out; /* Add transition for smooth animation */
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #444;
+    }
+
+    .property-description.visible {
+        display: block; /* Make description visible when toggled */
+        opacity: 1; /* Set opacity to 1 */
+    }
+
+    .toggle-description {
+        margin-bottom: 10px; /* Add some spacing below the button */
+        transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 16px;
+        cursor: pointer;
+    }
+
+    .toggle-description:hover {
+        background-color: #0056b3;
+    }
+
+    .toggle-description.rotate {
+        transform: rotate(180deg); /* Rotate the button when description is visible */
     }
 
     .side-panel {
@@ -90,4 +117,19 @@
         margin-top: 20px;
     }
 </style>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // JavaScript for toggling description
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.querySelector('.toggle-description');
+        const description = document.querySelector('.property-description');
+
+        toggleButton.addEventListener('click', function() {
+            description.classList.toggle('visible'); // Toggle visibility of description
+            toggleButton.classList.toggle('rotate'); // Rotate toggle button icon
+        });
+    });
+</script>
 {% endblock %}
