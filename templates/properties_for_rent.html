@@ -1,158 +1,55 @@
+<!-- properties_for_rent.html -->
+
 {% extends 'base.html' %}
 
-{% block title %}Properties for Rent{% endblock %}
-
-{% block head %}
-    {{ super() }}
-    <style>
-        .section-properties {
-            padding: 50px 0;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 36px;
-            color: #333;
-        }
-
-        .property-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
-        .property {
-            width: calc(33.33% - 20px);
-            margin-bottom: 40px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .property:hover {
-            transform: translateY(-5px);
-        }
-
-        .property-image {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .property-image img {
-            width: 100%;
-            height: auto;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .property-image:hover img {
-            transform: scale(1.1);
-        }
-
-        .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            text-align: center;
-            transition: background 0.3s ease-in-out;
-        }
-
-        .overlay:hover {
-            background: rgba(0, 0, 0, 0.9);
-        }
-
-        .btn-view-details {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 10px;
-            border: 2px solid #fff;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .btn-view-details:hover {
-            background: #fff;
-            color: #333;
-        }
-
-        .property-details {
-            padding: 20px;
-        }
-
-        .property-title {
-            margin-top: 0;
-            margin-bottom: 10px;
-            font-size: 24px;
-            color: #333;
-        }
-
-        .property-description {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .property-info {
-            margin-bottom: 15px;
-        }
-
-        .property-info p {
-            margin: 0;
-            color: #333;
-        }
-
-        .property-contact {
-            border-top: 1px solid #ddd;
-            padding-top: 15px;
-        }
-
-        .contact-info {
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-        }
-    </style>
-{% endblock %}
+{% block title %}Properties for Rent - My Website{% endblock %}
 
 {% block content %}
-    <section class="section-properties">
-        <div class="container">
-            <h2 class="section-title">Properties for Rent</h2>
-            <div class="property-list">
-                {% for property in properties %}
-                    <div class="property">
-                        <div class="property-image">
-                            {% if property.images %}
-                                <img src="{{ property.images[0].url }}" alt="{{ property.title }}">
-                            {% else %}
-                                <img src="{{ url_for('static', filename='images/default.jpg') }}" alt="Default Image">
-                            {% endif %}
-                            <div class="overlay">
-                                <a href="view_property', property_id=property.id" class="btn-view-details">View Details</a>
-                            </div>
-                        </div>
-                        <div class="property-details">
-                            <h3 class="property-title">{{ property.title }}</h3>
-                            <p class="property-description">{{ property.description }}</p>
-                            <div class="property-info">
-                                <p>Price: ${{ property.price }} per month</p>
-                                <p>Bedrooms: {{ property.bedrooms }}</p>
-                                <p>Bathrooms: {{ property.bathrooms }}</p>
-                                <p>Property Type: {{ property.property_type }}</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                {% endfor %}
+<div class="container">
+    <h1 class="mt-4 text-center">Properties Available for Rent</h1>
+    <div class="row mt-4">
+        {% for property in properties %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow">
+                <div class="property-image">
+                    {% if property.images %}
+                        <img src="{{ property.images[0].url }}" class="card-img-top" alt="{{ property.title }}">
+                    {% else %}
+                        <img src="{{ url_for('static', filename='images/default.jpg') }}" class="card-img-top" alt="Default Image">
+                    {% endif %}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{ property.title }}</h5>
+                    <p class="card-text description">{{ property.description }}</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Price:</strong> ${{ property.price }}</li>
+                        <li><strong>Location:</strong> {{ property.location }}</li>
+                        <!-- Add more details as needed -->
+                    </ul>
+                    <a href="{{ url_for('view_property', property_id=property.id) }}" class="btn btn-primary btn-block">View Details</a>
+                </div>
             </div>
         </div>
-    </section>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Embedding CSS styles -->
+<style>
+/* Styling for property descriptions */
+.description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.description::first-letter {
+    font-size: 28px;
+    color: #007bff; /* Change the color to your preference */
+    float: left;
+    margin-right: 5px;
+    font-family: cursive;
+}
+</style>
 {% endblock %}

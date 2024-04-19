@@ -18,5 +18,5 @@ def remove_user(email):
 
 if __name__ == "__main__":
     # Specify the email of the user you want to remove
-    email_to_remove = 'bikorimanadesire@yahoo.com'
+    email_to_remove = 'kigaliinspectify@gmail.com'
     remove_user(email_to_remove)

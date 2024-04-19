@@ -142,8 +142,8 @@
                                         <tbody>
                                             {% for admin in admins %}
                                                 <tr>
-                                                    <td>{{ is_admin.username }}</td>
-                                                    <td>{{ is_admin.email }}</td>
+                                                    <td>{{ admin.username }}</td>
+                                                    <td>{{ admin.email }}</td>
                                                     <td>
                                                         <a href="{{ url_for('edit_admin', admin_id=admin.id) }}" class="btn btn-info btn-sm">Edit</a>
                                                         <form action="{{ url_for('delete_admin', admin_id=admin.id) }}" method="post" style="display: inline;">
