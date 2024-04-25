@@ -17839,3 +17839,1124 @@ INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 15:59:47] "[36mGET /static/icon/pintes
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 15:59:47] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 15:59:47] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 15:59:48] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:43] "GET /static/dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:43] "GET /static/contact.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/search.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/home.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/property_detail.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/admin_dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/about.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/images/IMG_5860.JPG HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/icon/business_card2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/House.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/icon/facebook.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/icon/twitter.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/icon/instagram.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/icon/tikt.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:44] "GET /static/icon/linkedin.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:45] "GET /static/icon/youtube.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:45] "GET /static/icon/pintest.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Apr/2024 23:15:45] "GET /static/whatsapp-icon.png HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET /static/dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET /static/contact.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET /static/search.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET /static/property_detail.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET /static/about.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET /static/admin_dashboard.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "GET /static/home.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:05] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/images/IMG_5860.JPG HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/twitter.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/facebook.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/business_card2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/instagram.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/linkedin.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/tikt.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/youtube.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/icon/pintest.jpeg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/whatsapp-icon.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "[36mGET /static/images/IMG_5860.JPG HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:06] "GET /static/House.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:18] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:19] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:19] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:19] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:19] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:19] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:19] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:19] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:21] "GET /dashboard?logged_in=True HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:21] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:22] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /add-property [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1164, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_property' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:33] "[35m[1mGET /add-property HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:33] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:35:34] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /add-property [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1164, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_property' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[35m[1mGET /add-property HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:36] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:37] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /add-property [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1164, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_property' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[35m[1mGET /add-property HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:40] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:41] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:41] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:41] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:41] "GET /static/icon/lOGO.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:37:41] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /add-property [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1164, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_property' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[35m[1mGET /add-property HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:44] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:45] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:46] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /add-property [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1164, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_property' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:48] "[35m[1mGET /add-property HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:48] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:48] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:48] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:48] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:48] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:48] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:49] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:50] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /add-property [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 873, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 892, in finalize_request
+    response = self.make_response(rv)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1164, in make_response
+    raise TypeError(
+TypeError: The view function for 'add_property' did not return a valid response. The function either returned None or ended without a return statement.
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:53] "[35m[1mGET /add-property HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:53] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:38:54] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:29] "GET /add-property HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:29] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:29] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:30] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:31] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:52:31] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[32mPOST /add-property HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "GET /static/images/WhatsApp_Image_2024-01-27_at_12.15.58_07efd804.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/images/IMG_5860.JPG HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:18] "[36mGET /static/House.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:19] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:19] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:19] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:19] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:19] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:19] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:19] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:28] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:29] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:29] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:29] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:29] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:29] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "GET /dashboard?logged_in=True HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:32] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:53:33] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "GET /add-property HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:33] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:34] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:34] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:34] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:34] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 00:58:34] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 42, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:33] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 42, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:44] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:44] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:44] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:45] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:46] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:46] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 42, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:48] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:49] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:49] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:49] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:49] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:49] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:49] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:49] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:54] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:55] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 42, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:58] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:59] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:59] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:59] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:03:59] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 42, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:34] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:35] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:36] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:36] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 42, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:40] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:41] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:41] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:41] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:41] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:41] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:41] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:04:41] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 42, in block 'content'
+    <td>{{ property.title }}</td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:12] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:12] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:12] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:13] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:14] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:14] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:42] "GET /dashboard?logged_in=True HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:42] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:43] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:44] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:05:44] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 40, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:12] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:12] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:13] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:14] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:14] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 40, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:16] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:17] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:18] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:18] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /dashboard [GET]
+Traceback (most recent call last):
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/desire/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 319, in dashboard
+    return render_template('dashboard.html', properties=user_properties, logged_in=True)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "/home/desire/.local/lib/python3.8/site-packages/flask/templating.py", line 131, in _render
+    rv = template.render(context)
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/desire/.local/lib/python3.8/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "/home/desire/my_projects/DreamHome/templates/base.html", line 237, in top-level template code
+    {% block content %}{% endblock %}
+  File "/home/desire/my_projects/DreamHome/templates/dashboard.html", line 40, in block 'content'
+    <td><img src="{{ url_for('static', filename='images/' + property.image) }}" alt="{{ property.title }}" class="img-thumbnail" width="100"></td>
+jinja2.exceptions.UndefinedError: 'models.Property object' has no attribute 'image'
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:20] "[35m[1mGET /dashboard?logged_in=True HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:20] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:21] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:22] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:12:22] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "GET /dashboard?logged_in=True HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/images/WhatsApp_Image_2024-01-27_at_12.15.58_07efd804.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:25] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:26] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:26] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:26] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:26] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:26] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:16:26] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:06] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/images/WhatsApp_Image_2024-01-27_at_12.15.58_07efd804.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/images/IMG_5860.JPG HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:07] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:08] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:13] "[32mPOST /admin/delete_property/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:13] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/images/WhatsApp_Image_2024-01-27_at_12.15.58_07efd804.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:14] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[32mPOST /admin/delete_property/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:22] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:17:23] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.31.190.52:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:25] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:26] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:27] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:27] "[36mGET /static/icon/lOGO.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:42] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:43] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:43] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:43] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:43] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:43] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:43] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:43] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "GET /dashboard?logged_in=True HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:45] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:46] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "GET /add-property HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:48] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:21:49] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[32mPOST /add-property HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "GET /static/images/WhatsApp_Image_2024-01-27_at_12.15.58_07efd804.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:16] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:17] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:17] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:17] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:17] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:17] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/images/WhatsApp_Image_2024-01-27_at_12.15.58_07efd804.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:36] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:37] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:37] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:37] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:22:37] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[32mPOST /admin/delete_property/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "GET /admin/dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/search.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/home.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/property_detail.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/contact.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/admin_dashboard.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/about.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[33mGET /static/properties_for_sale.css HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/icon/twitter.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/icon/business_card2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/icon/facebook.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:28] "[36mGET /static/icon/instagram.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:29] "[36mGET /static/icon/linkedin.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:29] "[36mGET /static/icon/tikt.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:29] "[36mGET /static/icon/youtube.jpeg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:29] "[36mGET /static/whatsapp-icon.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Apr/2024 01:23:29] "[36mGET /static/icon/pintest.jpeg HTTP/1.1[0m" 304 -

@@ -340,6 +340,7 @@ def view_property(property_id):
     db.session.commit()
     
     return render_template('property_detail.html', property=property)
+    
 
 @app.route('/add-property', methods=['GET', 'POST'])
 @login_required
@@ -368,11 +369,12 @@ def add_property():
         # Get the uploaded files
         files = request.files.getlist('image')
 
-        # Create a new Property object
+        # Create a new Property object associated with the current user
         new_property = Property(
             title=title, description=description, price=price,
             num_bedrooms=num_bedrooms, num_bathrooms=num_bathrooms, location=location, year_built=year_built,
-             is_for_sale=is_for_sale, is_for_rent=is_for_rent, amenities=amenities
+            is_for_sale=is_for_sale, is_for_rent=is_for_rent, amenities=amenities,
+            user_id=current_user.id  # Associate with the current user
         )
 
         # Add the property to the database session to generate the property ID
@@ -397,7 +399,7 @@ def add_property():
         db.session.commit()
 
         flash('Property added successfully.', 'success')
-        return redirect(url_for('home'))
+        return redirect(url_for('dashboard'))
 
     return render_template('add_property.html')
 

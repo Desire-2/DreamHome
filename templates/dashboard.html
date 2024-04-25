@@ -27,22 +27,26 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th>Image</th>
                     <th>Title</th>
                     <th>Description</th>
                     <th>Price</th>
-                    <th>Number of Bedrooms</th>
-                    <th>Number of Bathrooms</th>
                     <!-- Add more headers as needed -->
                 </tr>
             </thead>
             <tbody>
                 {% for property in current_user.properties %}
                 <tr>
+                    <td>
+                    {% if property.images %}
+                <img src="{{ property.images[0].url }}" alt="{{ property.title }}" class="img-thumbnail" width="100">
+                {% else %}
+                <img src="{{ url_for('static', filename='images/default.jpg') }}" alt="Default Image" class="img-thumbnail" width="100">
+                {% endif %}
+                </td>
                     <td>{{ property.title }}</td>
                     <td>{{ property.description }}</td>
-                    <td>{{ property.price }}</td>
-                    <td>{{ property.num_bedrooms }}</td>
-                    <td>{{ property.num_bathrooms }}</td>
+                    <td>${{ property.price }}</td>
                     <!-- Add more columns as needed -->
                 </tr>
                 {% endfor %}
