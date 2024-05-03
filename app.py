@@ -1,7 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session, send_from_directory, current_app
 from flask_sqlalchemy import SQLAlchemy
-from transformers import pipeline
-from flask_mail import Mail, Message
 import logging
 from flask_migrate import Migrate
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
@@ -10,12 +8,8 @@ from werkzeug.utils import secure_filename
 from forms import RegistrationForm
 from forms import EditProfileForm, AdminForm
 import pandas as pd
-import numpy as np
 from flask import send_file
-import json
 import random
-import tensorflow as tf
-from io import BytesIO
 import os
 from flask_login import current_user
 

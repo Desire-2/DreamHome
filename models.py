@@ -7,18 +7,17 @@ db = SQLAlchemy()
 
 class Property(db.Model):
     __tablename__ = 'properties'
-
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100), nullable=False)
     description = db.Column(db.Text)
     price = db.Column(db.Float)
     num_bedrooms = db.Column(db.Integer)
     num_bathrooms = db.Column(db.Integer)
-    area = db.Column(db.Float)  # Area in square meters
+    area = db.Column(db.Float)
     location = db.Column(db.String(255))
     year_built = db.Column(db.Integer)
-    property_type = db.Column(db.String(50))  # E.g., Apartment, House, Condo
-    amenities = db.Column(db.String(255))  # Comma-separated list of amenities
+    property_type = db.Column(db.String(50))
+    amenities = db.Column(db.String(255))
     is_featured = db.Column(db.Boolean, default=False)
     is_for_sale = db.Column(db.Boolean, default=True)
     is_for_rent = db.Column(db.Boolean, default=False)
@@ -33,7 +32,7 @@ class Image(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     filename = db.Column(db.String(100), nullable=False)
     property_id = db.Column(db.Integer, db.ForeignKey('properties.id'), nullable=False)
-    _url = db.Column(db.String(255))  # Add a column to store the URL
+    _url = db.Column(db.String(255))
 
     def __init__(self, filename, property_id, url=None):
         self.filename = filename
@@ -61,7 +60,6 @@ class Image(db.Model):
 
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
-
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), unique=True, nullable=False)
     email = db.Column(db.String(120), unique=True, nullable=False)
