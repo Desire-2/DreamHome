@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, session, send_from_directory, current_app
 from flask_sqlalchemy import SQLAlchemy
+from flask_mail import Mail, Message
 import logging
 from flask_migrate import Migrate
 from flask_login import LoginManager, login_user, logout_user, login_required, current_user
